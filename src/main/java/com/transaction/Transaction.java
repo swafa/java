@@ -1,5 +1,13 @@
 package com.transaction;
 
+/**
+ * 
+ * The class for holding the information of a single Transaction, including the
+ * relevant attributes
+ * 
+ * @author Khaled
+ *
+ */
 public class Transaction {
 
 	private long id;
@@ -8,7 +16,7 @@ public class Transaction {
 	private long parent_id;
 
 	public Transaction() {
-		
+
 	}
 
 	/**
@@ -19,7 +27,8 @@ public class Transaction {
 	}
 
 	/**
-	 * @param id the id to set
+	 * @param id
+	 *            the id to set
 	 */
 	public void setId(long id) {
 		this.id = id;
@@ -33,7 +42,8 @@ public class Transaction {
 	}
 
 	/**
-	 * @param amount the amount to set
+	 * @param amount
+	 *            the amount to set
 	 */
 	public void setAmount(double amount) {
 		this.amount = amount;
@@ -47,26 +57,26 @@ public class Transaction {
 	}
 
 	/**
-	 * @param type the type to set
+	 * @param type
+	 *            the type to set
 	 */
 	public void setType(String type) {
 		this.type = type;
 	}
 
 	/**
-	 * @return the parentId
+	 * @return the parent_id
 	 */
-	public long getParentId() {
+	public long getParent_id() {
 		return parent_id;
 	}
 
 	/**
-	 * @param parentId the parentId to set
+	 * @param parent_id
+	 *            the parent_id to set
 	 */
-	public void setParentId(long parentId) {
-		this.parent_id = parentId;
+	public void setParent_id(long parent_id) {
+		this.parent_id = parent_id;
 	}
-	
-	
 
 }
